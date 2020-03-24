@@ -2,7 +2,7 @@
 ###### **To add this program in your repo follow these steps**
 
 ```
-~ $ git init
+~ $ git init 
 
 ~$ git add README.md
 
