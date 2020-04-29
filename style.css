@@ -23,12 +23,12 @@ hr{
     width:98%;
     height: 50%;
 }
-@media screen and (min-width:780px)
+@media screen and (min-width:560px)
 {
     .calculator{
         text-align: center;
         margin:0 auto;
-        width: 50%;
+        width:50%;
         height: 50%;
         border: 1px solid #222222;
     }
@@ -46,7 +46,7 @@ hr{
     .calculator{
     text-align: center;
     margin:0 auto;
-    width: 50%;
+    width: 70%;
     height: 50%;
     border: 1px solid #222222;
     }
