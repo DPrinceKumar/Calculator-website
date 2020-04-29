@@ -17,8 +17,9 @@ border-bottom: 2px solid #222222;
 .calculator{
     text-align: center;
     margin: 1%;
-    width:98%;
+    width:97%;
     height: 50%;
+    border: 2px dotted black;
 }
 @media screen and (min-width:560px)
 {
@@ -27,7 +28,30 @@ border-bottom: 2px solid #222222;
         margin:0 auto;
         width:50%;
         height: 50%;
-        border: 1px solid #222222;
+        border: 1px double #222222;
+        font-size:3vh;
+    }
+    h1{
+        margin:0% 25% 1% 25%;
+        color:orangered;
+        font-family: monospace;
+        text-align: left;
+        border-bottom:1px solid #222222;
+        font-size: 2rem;
+        }
+        .operator{
+            font-size: 6vh;
+        }
+}
+
+@media screen and (min-width:1024px)
+{   
+    .calculator{
+    text-align: center;
+    margin:0 auto;
+    width: 50%;
+    height: 90%;
+    border: 1px solid #222222;
     }
     h1{
         margin:0% 25% 1% 25%;
@@ -35,19 +59,11 @@ border-bottom: 2px solid #222222;
         font-family: monospace;
         text-align: left;
         border-bottom:2px solid #222222;
-        font-size: 3rem;
+        font-size: 3vh;
         }
-}
-@media screen and (min-width:1024px)
-{   
-    .calculator{
-    text-align: center;
-    margin:0 auto;
-    width: 70%;
-    height: 50%;
-    border: 1px solid #222222;
-    }
-    
+        .operator{
+            font-size: 3vh;
+        }
 }
 .calculator-screen{
     width: 100%;
@@ -102,8 +118,9 @@ button{
 .operator{
     color: white;
     background-color:olivedrab;
-    font-size: 3rem;
+    font-size: 6vh;
 }
+
 button:hover{
     background-color: darkgray;
     color: red;
