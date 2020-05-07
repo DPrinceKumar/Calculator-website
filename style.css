@@ -1,25 +1,92 @@
-  /* CSS */
 *{
 margin: 0;
-/* padding: 0 ; */
+padding: 0 ;
 }
 body{
     margin-top:2% ;
+    font-family: "Avenir Next",monospace,sans-serif;
 }
 h1{
-margin:0.5% 0% 0% 0.5% ;
+margin:0.5% 0% 0% 1% ;
 color:orangered;
-font-family: monospace;
-font-size: 3rem;
+font-size: 2rem;
 text-align: left;
 border-bottom: 2px solid #222222;
 }
 .calculator{
-    text-align: center;
-    margin: 1%;
-    width:97%;
+    text-align: justify;
+    margin:5% 3% 3% 3%;
     height: 50%;
-    border: 2px dotted black;
+    box-shadow: 0 4px 8px 0 rgba(23, 157, 234, 0.917), 0 6px 20px 0 rgba(32, 215, 221, 0.65);
+}
+.calculator-screen{
+    width: 90%;
+    height:12vh;
+    opacity: 0.8;
+    background: none;
+    color: tomato;
+    text-align: right;
+    font-size: 200%;
+    border: none;
+}
+.calculator-keys{
+    width:100%;
+    height: 100%;
+}
+button{
+    width:20%;
+    height: 13vh;
+    background:none;
+    border-radius:50%;
+    color: black;
+    font-size: 150%;
+    border-radius: 100%;
+    margin: 3% auto 0%;
+    border: none;
+}
+button:nth-child(1),button:nth-child(2),button:nth-child(3){
+    color: black;
+    background-color:#eaedef;
+    border-radius: 50%;
+    line-height: 3rem;
+    font-size: 130%;
+}
+button:nth-child(3){
+    font-size: 180%;
+}
+.zero-btn{
+    margin: 0 27%;
+    border-radius: 50%;
+}
+button:nth-child(1):hover,button:nth-child(2):hover,button:nth-child(3):hover{
+    color: #ffffff;
+    background-color: teal;
+    }
+.equal{
+    color: white;
+    background-color: tomato;
+    margin: 0 auto;
+}
+.operator{
+    color: black;
+    background:none;
+}
+button:nth-child(4){
+    background-color: #20b2aa;
+    font-size: 200%;
+    line-height: 205%;
+}
+button:nth-child(8){
+    background-color: #ffa500;
+    font-size: 200%;
+}
+button:nth-child(12){
+    background-color: #f08080;
+    font-size: 200%;
+}
+button:nth-child(16){
+    background-color: #9477af;
+    font-size: 200%;
 }
 @media screen and (min-width:560px)
 {
@@ -28,20 +95,42 @@ border-bottom: 2px solid #222222;
         margin:0 auto;
         width:50%;
         height: 50%;
-        border: 1px double #222222;
-        font-size:3vh;
+        border: 2px solid teal;
+        background: url("https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+        background-repeat: no-repeat ;
+        background-size: cover;
+        font-size: 150%;
     }
     h1{
         margin:0% 25% 1% 25%;
         color:orangered;
-        font-family: monospace;
         text-align: left;
         border-bottom:1px solid #222222;
         font-size: 2rem;
         }
-        .operator{
-            font-size: 6vh;
+    
+}
+@media screen and (min-width:760px)
+{
+    .calculator{
+        text-align: center;
+        margin:0 auto;
+        width:50%;
+        height: 50%;
+        border: 2px solid teal;
+        background: url("https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+        background-repeat: no-repeat ;
+        background-size: cover;
+        font-size:20px;
+    }
+    h1{
+        margin:0% 25% 1% 25%;
+        color:orangered;
+        text-align: left;
+        border-bottom:1px solid #222222;
+        font-size: 2rem;
         }
+    
 }
 
 @media screen and (min-width:1024px)
@@ -50,110 +139,31 @@ border-bottom: 2px solid #222222;
     text-align: center;
     margin:0 auto;
     width: 50%;
-    height: 90%;
-    border: 1px solid #222222;
+    font-size:150%;
+    border: 2px solid teal;
     }
     h1{
         margin:0% 25% 1% 25%;
         color:orangered;
-        font-family: monospace;
         text-align: left;
         border-bottom:2px solid #222222;
-        font-size: 3vh;
-        }
-        .operator{
-            font-size: 3vh;
+        font-size:3rem;
         }
 }
-.calculator-screen{
-    width: 100%;
-    height:10vh;
-    background-color: wheat;
-    color: tomato;
-    text-align: right;
-    font-size: 200%;
-    border: none;
-    padding-right:3% ;
-    box-sizing: border-box;
-}
-.calculator-keys{
-    width:100%;
-    height: 100%;
-  
-}
-.row{
-    display: flex;
-}
-button{
-    height:12vh;
-    background-color:rgb(206, 206, 206);
-    border: 1px solid black;
-    color: orangered;
-    font-size: 190%;
-    width: 25%;
-    outline:none
-    
-}
-.zero-btn{
+@media screen and (min-width:2000px)
+{   
+    .calculator{
+    text-align: center;
+    margin:0 auto;
     width: 50%;
-}
-.all-clear{
-    color: white;
-    background-color: black;
-    width: 50%;
-}
-
-.all-clear:hover{
-    color: white;
-    background-color: black;  
-}
-.all-clear:active{
-    color: #ffffff;
-    background-color: teal;
+    font-size:220%;
+    border: 2px solid teal;
     }
-.equal{
-    color: white;
-    background-color: tomato;
+    h1{
+        margin:0% 25% 1% 25%;
+        color:orangered;
+        text-align: left;
+        border-bottom:2px solid #222222;
+        font-size:3rem;
+        }
 }
-.operator{
-    color: white;
-    background-color:olivedrab;
-    font-size: 6vh;
-}
-
-button:hover{
-    background-color: darkgray;
-    color: red;
-    
-}
-button:focus{
-    background-color: darkgray;
-    font-size: 200%;
-    color: red;
-}
-button:active{
-    background-color: yellow;
-    font-size: 160%;
-    color: red;
-}
-.operator:hover{
-    background-color: olivedrab;
-    color: black;
-    font-size:210%;
-}
-.operator:active{
-    background-color: gold;
-    color: black;
-    font-size: 300%;
-}
-.equal:hover{
-    background-color: tomato;
-    color: white;
-    font-size: 250%;
-}
-.equal:active{
-    background-color: white;
-    color: black;
-    font-size: 250%;
-}
-
